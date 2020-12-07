@@ -1,8 +1,8 @@
 import { Component } from "react";
 import Navbar from "./components/Navbar/navbar.js";
 import Cardsall from "./components/Cards/cardsall.js";
-import Searchbox from "./components/SearchForm/searchform";
-import SortBySelect from "./components/SearchResults/searchresults";
+import SearchForm from "./components/SearchForm/searchform";
+import SearchResults from "./components/SearchResults/searchresults";
 import './App.css';
 
 class App extends Component {
@@ -14,14 +14,6 @@ class App extends Component {
       searchField: "",
       loading: true,
     };
-  }
-
-  componentDidMount() {
-    fetch("https://randomuser.me/api/?results=120&nat=us")
-      .then((res) => res.json())
-      .then((users) => {
-        this.setState({ users: users.results, loading: false });
-      });
   }
 
   handleChange = (e) => {
@@ -49,8 +41,6 @@ class App extends Component {
     );
 
     if (this.state.loading) {
-      return undefined;
-    } else {
       return (
         <div className="App">
           <Navbar />
