@@ -1,20 +1,27 @@
 {
-  "name": "empdir",
+  "name": "employee_directory",
   "version": "0.1.0",
+  "description": "Application that allows a user to search and sort employees by name.",
+  "author": "Richard B. Hall",
+  "license": "MIT",
   "private": true,
+  "homepage": "https://hallrb.github.io/Employee_Directory/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HallRB/Employee_Directory"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.6",
-    "@testing-library/react": "^11.2.2",
-    "@testing-library/user-event": "^12.2.2",
-    "axios": "^0.21.0",
-    "bootstrap": "^4.5.3",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.0",
+    "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
