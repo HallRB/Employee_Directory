@@ -12,8 +12,7 @@ const Navbar = ({ icon, title }) => {
 };
 
 Navbar.defaultProps = {
-  title: "User Directory",
-  icon: "fas fa-user",
+  title: "Employee Directory",
 };
 
 export default Navbar;

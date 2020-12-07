@@ -55,13 +55,13 @@ class App extends Component {
       return (
         <div className="App">
           <Navbar />
-          <SearchForm
-            placeholder="search by name"
-            handleChange={this.handleChange}
-          />
           <SearchResults
             lastName={this.lastName}
             firstName={this.firstName}
+          />
+          <SearchForm
+            placeholder="search by name"
+            handleChange={this.handleChange}
           />
           <Cardsall users={filteredUsers} />
         </div>

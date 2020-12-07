@@ -7,12 +7,12 @@ const searchresults = ({
 }) => {
   return (
     <div className="button-container">
-      <button className="btn btn-bluegreen" onClick={lastName}>
-        Sort by last name
+      <button className="btn btn-bluegreen" onClick={firstName}>
+       first name
       </button>
 
-      <button className="btn btn-bluegreen" onClick={firstName}>
-        Sort by first name
+      <button className="btn btn-bluegreen" onClick={lastName}>
+      last name
       </button>
     </div>
   );

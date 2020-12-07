@@ -1,11 +1,13 @@
 .searchform {
   -webkit-appearance: none;
-  border: 1px red solid;
+  border: 1px rgb(0, 0, 0) solid;
+  background-color: rgb(213, 255, 255);
   outline: none;
-  padding: 12px;
+  padding: 9px;
   width: 250px;
   line-height: 15px;
   margin-bottom: 45px;
   display: block;
   margin: 0 auto;
+  font-size: x-large;
 }

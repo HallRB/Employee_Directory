@@ -1,7 +1,11 @@
 .cardsall {
   width: 85%;
+  height: max-content;
   margin: 10px auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
+  column-count: auto;
+  grid-template-columns: repeat( auto-fit, minmax(275px, 1fr) );
+  grid-gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }

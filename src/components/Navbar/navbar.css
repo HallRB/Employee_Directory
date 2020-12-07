@@ -2,11 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 2rem;
   z-index: 1;
   width: 100%;
-  opacity: 0.82;
   margin-bottom: 1rem;
-  color: turquoise;
-  background: salmon;
+  font-size: xx-large;
+  color: rgb(255, 255, 255);
+  background:  rgb(11, 6, 37);
+  margin: -30px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: auto;
 }

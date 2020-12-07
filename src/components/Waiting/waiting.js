@@ -7,7 +7,7 @@ const Waiting = () => {
       <img
         src={waiting}
         alt="waiting to load..."
-        style={{ width: "200px", margin: "auto", display: "block" }}
+        style={{ width: "1px", margin: "auto", display: "block" }}
       />
     </Fragment>
   );

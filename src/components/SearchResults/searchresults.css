@@ -1,31 +1,25 @@
 .button-container {
   width: 85%;
   margin: 10px auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
 }
 
 .btn {
   border: white 1px solid;
   text-decoration: none;
-  padding: 0.85rem;
   font-size: 14px;
-  padding: 10px 24px;
-  border-radius: 8px;
-  transition-duration: 0.5s;
+  font-weight: 700;
+  border-radius: 2px;
 }
 
 .btn:hover {
-  background-color: pink;
-  color: white;
-}
-
-.btn-greenblue {
-  background-color: #5fdd9d;
+  outline: solid rgb(255, 255, 255);
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+    -webkit-filter: contrast(1.25);
+  filter: contrast(1.25);
 }
 
 .btn-bluegreen {
   background-color: #244a80;
-  color: silver;
+  color: rgb(255, 255, 255);
 }
