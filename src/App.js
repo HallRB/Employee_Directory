@@ -17,18 +17,26 @@ class App extends Component {
     };
   }
 
+  componentDidMount() {
+    fetch("https://randomuser.me/api/?results=120&nat=us")
+      .then((res) => res.json())
+      .then((users) => {
+        this.setState({ users: users.results, loading: false });
+      });
+  }
+
   handleChange = (e) => {
     this.setState({ searchField: e.target.value });
   };
 
-  lastNameAsc = () => {
+  lastName = () => {
     const users = this.state.users.sort((a, b) =>
       a.name.last.localeCompare(b.name.last)
     );
     this.setState({ users: users });
   };
 
-  firstNameAsc = () => {
+  firstName = () => {
     const users = this.state.users.sort((a, b) =>
       a.name.first.localeCompare(b.name.first)
     );
@@ -42,6 +50,8 @@ class App extends Component {
     );
 
     if (this.state.loading) {
+      return <Waiting />;
+    } else {
       return (
         <div className="App">
           <Navbar />
@@ -50,8 +60,8 @@ class App extends Component {
             handleChange={this.handleChange}
           />
           <SearchResults
-            lastNameAsc={this.lastNameAsc}
-            firstNameAsc={this.firstNameAsc}
+            lastName={this.lastName}
+            firstName={this.firstName}
           />
           <Cardsall users={filteredUsers} />
         </div>
