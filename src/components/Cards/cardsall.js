@@ -1,5 +1,5 @@
 import React from "react";
-import Cards from "./Cards";
+import Cards from "./cards.js";
 import "./cardsall.css";
 
 const Cardsall = (props) => {
@@ -12,4 +12,4 @@ const Cardsall = (props) => {
   );
 };
 
-export default cardsall;
+export default Cardsall;
