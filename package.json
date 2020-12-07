@@ -1,5 +1,5 @@
 {
-  "name": "employee_directory",
+  "name": "empdir",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
