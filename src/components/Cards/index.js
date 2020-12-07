@@ -1,26 +1,18 @@
 import React from "react";
-import CardBtn from "../CardBtn";
-import "./style.css";
+import "./Card.css";
 
-function Card(props) {
-    return (
-        <div
-            className="card"
-            style={{
-                backgroundImage: props.image ? `url(${props.image})` : "none"
-            }}
-        >
-            {!props.image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-            <CardBtn
-                onClick={props.handleBtnClick}
-                data-value="pass"
-            />
-            <CardBtn
-                onClick={props.handleBtnClick}
-                data-value="pick"
-            />
-        </div>
-    );
-}
+const Card = (props) => {
+
+  return (
+    <div className="card-container">
+      <img alt="user" src={props.user.picture.medium} />
+      <h2>
+        {props.user.name.title}. {props.user.name.first} {props.user.name.last}
+      </h2>
+      <p><strong>Phone:</strong> {props.user.phone}</p>
+      <p><strong>E-mail:</strong> {props.user.email}</p>
+    </div>
+  );
+};
 
 export default Card;
