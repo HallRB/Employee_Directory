@@ -1,8 +1,8 @@
 import { Component } from "react";
-import Navbar from "./components/Navbar/index";
-import Cardsall from "./components/Cardsall/index";
-import Searchbox from "./components/SearchForm/index";
-import SortBySelect from "./components/SearchResults/index";
+import Navbar from "./components/Navbar/navbar.js";
+import Cardsall from "./components/Cards/cardsall.js";
+import Searchbox from "./components/SearchForm/searchform";
+import SortBySelect from "./components/SearchResults/searchresults";
 import './App.css';
 
 class App extends Component {
