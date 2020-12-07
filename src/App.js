@@ -1,8 +1,9 @@
 import { Component } from "react";
 import Navbar from "./components/Navbar/navbar.js";
 import Cardsall from "./components/Cards/cardsall.js";
-import SearchForm from "./components/SearchForm/searchform";
-import SearchResults from "./components/SearchResults/searchresults";
+import SearchForm from "./components/SearchForm/searchform.js";
+import SearchResults from "./components/SearchResults/searchresults.js";
+import Waiting from "./components/Waiting/waiting.js";
 import './App.css';
 
 class App extends Component {
