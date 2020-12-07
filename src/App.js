@@ -1,4 +1,8 @@
-import logo from './logo.svg';
+import { Component } from "react";
+import Navbar from "./components/Navbar/index";
+import Cards from "./components/Cards/index";
+import Searchbox from "./components/SearchForm/index";
+import SortBySelect from "./components/SearchResults/index";
 import './App.css';
 
 function App() {
