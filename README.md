@@ -4,7 +4,7 @@
 ####  This app allows the user to look up employees by name reacting with each letter entered. User may also sort the results by first or last name.  This was a project designed to test the basics of React.js
 
 ##  What does it look like?
-#### <img src= "/reactss.JPG" width="800">
+#### <img src= "/EmpDir.JPG" width="800">
 
 ## What technologies were used?
 #### HTML: Front End Language which displays the app
