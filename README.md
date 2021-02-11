@@ -15,4 +15,3 @@
 
 ## Credits
 #### MIT License
-#### https://www.artstation.com/yargon provided the background for the page
